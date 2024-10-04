@@ -4,12 +4,14 @@ addr = '127.0.0.1'
 port = 8080
 
 def test_1():# Test 1: Check if the server is running by connecting to it
+    print("Starting Test 1")
     with socket.create_connection((addr, port)) as client_socket:
         cond = client_socket is not None
     if cond:print("Test 1 passed")
     else:print("Test 1 failed")
 
 def test_2():# Test 2: Test a simple GET request
+    print("Starting Test 2")
     with socket.create_connection((addr, port)) as client_socket:
         client_socket.sendall(b"GET / HTTP/1.1\r\nHost: localhost\r\n\r\n")
         response = client_socket.recv(4096).decode()
@@ -18,6 +20,7 @@ def test_2():# Test 2: Test a simple GET request
     else:print("Test 2 failed")
 
 def test_3():# Test 3: Test a request for a nonexistent file
+    print("Starting Test 3")
     with socket.create_connection((addr, port)) as client_socket:
         client_socket.sendall(b"GET /nonexistent.html HTTP/1.1\r\nHost: localhost\r\n\r\n")
         response = client_socket.recv(4096).decode()
@@ -26,6 +29,7 @@ def test_3():# Test 3: Test a request for a nonexistent file
     else:print("Test 3 failed")
 
 def test_4():# Test 4: Test a simple POST request
+    print("Starting Test 4")
     with socket.create_connection((addr, port)) as client_socket:
         client_socket.sendall(b"POST /change_name HTTP/1.1\r\nHost: localhost\r\nContent-Length: 9\r\n\r\nname=Alice")
         response = client_socket.recv(4096).decode()

@@ -1,6 +1,6 @@
 from socket import *
 
-serverName = 'dyn172-30-23-107.wireless.uwo.pri'
+serverName = 'dyn172-30-18-122.wireless.uwo.pri'
 serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName,serverPort))
