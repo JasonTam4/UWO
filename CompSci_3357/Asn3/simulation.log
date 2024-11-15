@@ -1,0 +1,62 @@
+2024-11-14 22:20:29,991 - 6 packets created, Window size: 4, Packet length: 32, Nth packet to be dropped: 4, Timeout interval: 1
+2024-11-14 22:20:29,992 - sending packet 0
+2024-11-14 22:20:29,992 - Processing packet 0
+2024-11-14 22:20:29,992 - packet 0 received
+2024-11-14 22:20:29,992 - sending packet 1
+2024-11-14 22:20:29,992 - Processing packet 1
+2024-11-14 22:20:29,992 - sending packet 2
+2024-11-14 22:20:29,992 - packet 1 received
+2024-11-14 22:20:29,992 - packet 3 dropped
+2024-11-14 22:20:29,992 - Processing packet 2
+2024-11-14 22:20:29,992 - ack 0 received
+2024-11-14 22:20:29,992 - packet 2 received
+2024-11-14 22:20:30,017 - sending packet 4
+2024-11-14 22:20:30,035 - Processing packet 4
+2024-11-14 22:20:30,054 - ack 1 received
+2024-11-14 22:20:30,066 - packet 4 received out of order
+2024-11-14 22:20:30,091 - sending packet 5
+2024-11-14 22:20:30,109 - Processing packet 5
+2024-11-14 22:20:30,116 - packet 5 received out of order
+2024-11-14 22:20:30,122 - ack 2 received
+2024-11-14 22:20:30,147 - sending packet 5
+2024-11-14 22:20:30,166 - Processing packet 5
+2024-11-14 22:20:30,172 - packet 5 received out of order
+2024-11-14 22:20:30,178 - ack 2 received, Ignoring
+2024-11-14 22:20:30,197 - ack 2 received, Ignoring
+2024-11-14 22:20:30,204 - ack 2 received, Ignoring
+2024-11-14 22:20:30,992 - packet 3 timed out
+2024-11-14 22:20:30,992 - packet 3 dropped
+2024-11-14 22:20:30,992 - sending packet 4
+2024-11-14 22:20:30,992 - Processing packet 4
+2024-11-14 22:20:30,992 - sending packet 5
+2024-11-14 22:20:30,992 - packet 4 received out of order
+2024-11-14 22:20:31,004 - ack 2 received, Ignoring
+2024-11-14 22:20:31,004 - Processing packet 5
+2024-11-14 22:20:31,023 - packet 5 received out of order
+2024-11-14 22:20:31,042 - ack 2 received, Ignoring
+2024-11-14 22:20:31,992 - packet 3 timed out
+2024-11-14 22:20:31,992 - sending packet 3
+2024-11-14 22:20:31,992 - Processing packet 3
+2024-11-14 22:20:31,992 - packet 4 dropped
+2024-11-14 22:20:31,992 - packet 3 received
+2024-11-14 22:20:31,992 - sending packet 5
+2024-11-14 22:20:31,992 - Processing packet 5
+2024-11-14 22:20:31,992 - ack 3 received
+2024-11-14 22:20:31,999 - packet 5 received out of order
+2024-11-14 22:20:32,023 - sending packet 5
+2024-11-14 22:20:32,042 - Processing packet 5
+2024-11-14 22:20:32,061 - ack 3 received, Ignoring
+2024-11-14 22:20:32,073 - packet 5 received out of order
+2024-11-14 22:20:32,122 - ack 3 received, Ignoring
+2024-11-14 22:20:32,992 - packet 4 timed out
+2024-11-14 22:20:32,992 - sending packet 4
+2024-11-14 22:20:32,992 - Processing packet 4
+2024-11-14 22:20:32,992 - packet 5 dropped
+2024-11-14 22:20:32,992 - packet 4 received
+2024-11-14 22:20:32,999 - ack 4 received
+2024-11-14 22:20:32,999 - sending packet 5
+2024-11-14 22:20:33,005 - Processing packet 5
+2024-11-14 22:20:33,005 - packet 5 received
+2024-11-14 22:20:33,011 - ack 5 received
+2024-11-14 22:20:33,018 - Received ack for last packet.
+2024-11-14 22:20:33,024 - Received termination signal.
