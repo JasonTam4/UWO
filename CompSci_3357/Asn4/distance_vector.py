@@ -1,9 +1,9 @@
-def bellman_ford(adj_matrix, n, source):
+def bellman_ford(adj_matrix, n, start):
     # Initialize distances from source to all vertices as infinity
     distances = [float('inf')] * n
-    distances[source] = 0
+    distances[start] = 0
     
-    # Relax all edges |V| - 1 times
+    # relax edges |V| - 1 times
     for run in range(n - 1):
         for i in range(n):
             for j in range(n):
@@ -11,24 +11,23 @@ def bellman_ford(adj_matrix, n, source):
                     if (distances[i] != float('inf')) and ((distances[i] + adj_matrix[i][j]) < distances[j]):
                         distances[j] = distances[i] + adj_matrix[i][j]
     
-    # Using one run, check for negative cycles
+    # Using one run, look for bad negative cycles
     for i in range(n):
         for j in range(n):
             if adj_matrix[i][j] != float('inf'):
                 if (distances[i] != float('inf')) and ((distances[i] + adj_matrix[i][j]) < distances[j]):
-                    # Negative cycle detected
                     return [None] * n
     
     return distances
 
 def main():
-    size = int(input())
+    n = int(input()) # size of matrix
     matrix = []
     
-    # Construct adjcency matrix
-    for i in range(size):
+    # get input and construct adjcency matrix
+    for i in range(n):
         row = []
-        for j in range(size):
+        for j in range(n):
             val = input()
             if val == 'f':
                 row.append(float('inf'))
@@ -36,9 +35,9 @@ def main():
                 row.append(int(val))
         matrix.append(row)
         
-    # Calculate shortest paths for each node
-    for i in range(size):
-        distances = bellman_ford(matrix, size, i)
+    # process each node
+    for i in range(n):
+        distances = bellman_ford(matrix, n, i)
         print(f"Node {i}: {distances}")
 
 if __name__ == "__main__":
